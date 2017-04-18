@@ -1,25 +1,110 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F2315" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1Tx-hK-6zb">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="ES7-oN-ZNh">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="1Tx-hK-6zb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xHd-j4-MHX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="sJJ-JP-UnK" kind="relationship" relationship="rootViewController" id="VNF-lJ-E6U"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rUM-L3-Zmd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="622" y="100"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9df-dw-04j">
+            <objects>
+                <viewController id="sJJ-JP-UnK" customClass="ViewController" customModule="KidsMath" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="2H6-FY-dNq"/>
+                        <viewControllerLayoutGuide type="bottom" id="53S-yb-vCB"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="R9N-ff-rSN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0l-vQ-cLO">
+                                <rect key="frame" x="200" y="164" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="IZC-cr-7tG"/>
+                                    <constraint firstAttribute="width" constant="200" id="SUa-Uh-5jb"/>
+                                </constraints>
+                                <state key="normal" title="Addition"/>
+                                <connections>
+                                    <segue destination="cb2-mT-AMk" kind="show" id="2R0-Ft-bR0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Odh-1X-Iyp">
+                                <rect key="frame" x="200" y="262" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="RRL-JY-RAa"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="ddC-Eb-txt"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="kLA-XO-zwA"/>
+                                    <constraint firstAttribute="height" constant="50" id="un9-A3-F0W"/>
+                                </constraints>
+                                <state key="normal" title="Subtraction"/>
+                                <connections>
+                                    <segue destination="D2f-KG-2Vt" kind="show" id="sm5-fr-h7M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="r0l-vQ-cLO" firstAttribute="centerX" secondItem="R9N-ff-rSN" secondAttribute="centerX" id="IFI-QH-B91"/>
+                            <constraint firstItem="r0l-vQ-cLO" firstAttribute="top" secondItem="2H6-FY-dNq" secondAttribute="bottom" constant="100" id="SQp-SE-VXQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6xH-wp-tK9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UxW-KF-qOC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1416" y="3"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ofe-5t-3gT">
+            <objects>
+                <viewController id="D2f-KG-2Vt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dVo-2y-6JH"/>
+                        <viewControllerLayoutGuide type="bottom" id="GKc-Sr-2wf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Dy-cl-QR8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MS8-lc-slQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1674" y="554"/>
+        </scene>
+        <!--Addition View Controller-->
+        <scene sceneID="2gx-tG-KrM">
+            <objects>
+                <viewController id="cb2-mT-AMk" customClass="AdditionViewController" customModule="KidsMath" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xy4-fR-XwB"/>
+                        <viewControllerLayoutGuide type="bottom" id="WgX-Kr-sUE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ojt-qg-AXV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aO0-Sb-w8a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2085" y="3"/>
         </scene>
     </scenes>
 </document>

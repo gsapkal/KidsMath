@@ -15,6 +15,8 @@
 		A19C818F1EA661F80080C75C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19C818D1EA661F80080C75C /* LaunchScreen.storyboard */; };
 		A19C819A1EA661F90080C75C /* KidsMathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C81991EA661F90080C75C /* KidsMathTests.swift */; };
 		A19C81A51EA661F90080C75C /* KidsMathUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C81A41EA661F90080C75C /* KidsMathUITests.swift */; };
+		A19C81B31EA66AC10080C75C /* AdditionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C81B21EA66AC10080C75C /* AdditionController.swift */; };
+		A19C81B51EA671DA0080C75C /* SubstractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C81B41EA671DA0080C75C /* SubstractionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		A19C81A01EA661F90080C75C /* KidsMathUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KidsMathUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19C81A41EA661F90080C75C /* KidsMathUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidsMathUITests.swift; sourceTree = "<group>"; };
 		A19C81A61EA661F90080C75C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A19C81B21EA66AC10080C75C /* AdditionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionController.swift; sourceTree = "<group>"; };
+		A19C81B41EA671DA0080C75C /* SubstractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubstractionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				A19C818D1EA661F80080C75C /* LaunchScreen.storyboard */,
 				A19C81901EA661F80080C75C /* Info.plist */,
 				A19C81881EA661F80080C75C /* KidsMath.xcdatamodeld */,
+				A19C81B21EA66AC10080C75C /* AdditionController.swift */,
+				A19C81B41EA671DA0080C75C /* SubstractionController.swift */,
 			);
 			path = KidsMath;
 			sourceTree = "<group>";
@@ -265,6 +271,8 @@
 				A19C81841EA661F80080C75C /* ViewController.swift in Sources */,
 				A19C81821EA661F80080C75C /* AppDelegate.swift in Sources */,
 				A19C818A1EA661F80080C75C /* KidsMath.xcdatamodeld in Sources */,
+				A19C81B51EA671DA0080C75C /* SubstractionController.swift in Sources */,
+				A19C81B31EA66AC10080C75C /* AdditionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
