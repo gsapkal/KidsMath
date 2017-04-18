@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A19C81821EA661F80080C75C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C81811EA661F80080C75C /* AppDelegate.swift */; };
+		A19C81841EA661F80080C75C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C81831EA661F80080C75C /* ViewController.swift */; };
+		A19C81871EA661F80080C75C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19C81851EA661F80080C75C /* Main.storyboard */; };
+		A19C818A1EA661F80080C75C /* KidsMath.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A19C81881EA661F80080C75C /* KidsMath.xcdatamodeld */; };
+		A19C818C1EA661F80080C75C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A19C818B1EA661F80080C75C /* Assets.xcassets */; };
+		A19C818F1EA661F80080C75C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19C818D1EA661F80080C75C /* LaunchScreen.storyboard */; };
+		A19C819A1EA661F90080C75C /* KidsMathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C81991EA661F90080C75C /* KidsMathTests.swift */; };
+		A19C81A51EA661F90080C75C /* KidsMathUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C81A41EA661F90080C75C /* KidsMathUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A19C81961EA661F90080C75C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A19C81761EA661F80080C75C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A19C817D1EA661F80080C75C;
+			remoteInfo = KidsMath;
+		};
+		A19C81A11EA661F90080C75C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A19C81761EA661F80080C75C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A19C817D1EA661F80080C75C;
+			remoteInfo = KidsMath;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A19C817E1EA661F80080C75C /* KidsMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KidsMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A19C81811EA661F80080C75C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A19C81831EA661F80080C75C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A19C81861EA661F80080C75C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A19C81891EA661F80080C75C /* KidsMath.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KidsMath.xcdatamodel; sourceTree = "<group>"; };
+		A19C818B1EA661F80080C75C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A19C818E1EA661F80080C75C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A19C81901EA661F80080C75C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A19C81951EA661F90080C75C /* KidsMathTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KidsMathTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A19C81991EA661F90080C75C /* KidsMathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidsMathTests.swift; sourceTree = "<group>"; };
+		A19C819B1EA661F90080C75C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A19C81A01EA661F90080C75C /* KidsMathUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KidsMathUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A19C81A41EA661F90080C75C /* KidsMathUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidsMathUITests.swift; sourceTree = "<group>"; };
+		A19C81A61EA661F90080C75C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A19C817B1EA661F80080C75C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A19C81921EA661F90080C75C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A19C819D1EA661F90080C75C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A19C81751EA661F80080C75C = {
+			isa = PBXGroup;
+			children = (
+				A19C81801EA661F80080C75C /* KidsMath */,
+				A19C81981EA661F90080C75C /* KidsMathTests */,
+				A19C81A31EA661F90080C75C /* KidsMathUITests */,
+				A19C817F1EA661F80080C75C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A19C817F1EA661F80080C75C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A19C817E1EA661F80080C75C /* KidsMath.app */,
+				A19C81951EA661F90080C75C /* KidsMathTests.xctest */,
+				A19C81A01EA661F90080C75C /* KidsMathUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A19C81801EA661F80080C75C /* KidsMath */ = {
+			isa = PBXGroup;
+			children = (
+				A19C81811EA661F80080C75C /* AppDelegate.swift */,
+				A19C81831EA661F80080C75C /* ViewController.swift */,
+				A19C81851EA661F80080C75C /* Main.storyboard */,
+				A19C818B1EA661F80080C75C /* Assets.xcassets */,
+				A19C818D1EA661F80080C75C /* LaunchScreen.storyboard */,
+				A19C81901EA661F80080C75C /* Info.plist */,
+				A19C81881EA661F80080C75C /* KidsMath.xcdatamodeld */,
+			);
+			path = KidsMath;
+			sourceTree = "<group>";
+		};
+		A19C81981EA661F90080C75C /* KidsMathTests */ = {
+			isa = PBXGroup;
+			children = (
+				A19C81991EA661F90080C75C /* KidsMathTests.swift */,
+				A19C819B1EA661F90080C75C /* Info.plist */,
+			);
+			path = KidsMathTests;
+			sourceTree = "<group>";
+		};
+		A19C81A31EA661F90080C75C /* KidsMathUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A19C81A41EA661F90080C75C /* KidsMathUITests.swift */,
+				A19C81A61EA661F90080C75C /* Info.plist */,
+			);
+			path = KidsMathUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A19C817D1EA661F80080C75C /* KidsMath */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A19C81A91EA661F90080C75C /* Build configuration list for PBXNativeTarget "KidsMath" */;
+			buildPhases = (
+				A19C817A1EA661F80080C75C /* Sources */,
+				A19C817B1EA661F80080C75C /* Frameworks */,
+				A19C817C1EA661F80080C75C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KidsMath;
+			productName = KidsMath;
+			productReference = A19C817E1EA661F80080C75C /* KidsMath.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A19C81941EA661F90080C75C /* KidsMathTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A19C81AC1EA661F90080C75C /* Build configuration list for PBXNativeTarget "KidsMathTests" */;
+			buildPhases = (
+				A19C81911EA661F90080C75C /* Sources */,
+				A19C81921EA661F90080C75C /* Frameworks */,
+				A19C81931EA661F90080C75C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A19C81971EA661F90080C75C /* PBXTargetDependency */,
+			);
+			name = KidsMathTests;
+			productName = KidsMathTests;
+			productReference = A19C81951EA661F90080C75C /* KidsMathTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A19C819F1EA661F90080C75C /* KidsMathUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A19C81AF1EA661F90080C75C /* Build configuration list for PBXNativeTarget "KidsMathUITests" */;
+			buildPhases = (
+				A19C819C1EA661F90080C75C /* Sources */,
+				A19C819D1EA661F90080C75C /* Frameworks */,
+				A19C819E1EA661F90080C75C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A19C81A21EA661F90080C75C /* PBXTargetDependency */,
+			);
+			name = KidsMathUITests;
+			productName = KidsMathUITests;
+			productReference = A19C81A01EA661F90080C75C /* KidsMathUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A19C81761EA661F80080C75C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Panaromic Innovations Inc";
+				TargetAttributes = {
+					A19C817D1EA661F80080C75C = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 3932BYJ3D2;
+					};
+					A19C81941EA661F90080C75C = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 3932BYJ3D2;
+						TestTargetID = A19C817D1EA661F80080C75C;
+					};
+					A19C819F1EA661F90080C75C = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 3932BYJ3D2;
+						TestTargetID = A19C817D1EA661F80080C75C;
+					};
+				};
+			};
+			buildConfigurationList = A19C81791EA661F80080C75C /* Build configuration list for PBXProject "KidsMath" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A19C81751EA661F80080C75C;
+			productRefGroup = A19C817F1EA661F80080C75C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A19C817D1EA661F80080C75C /* KidsMath */,
+				A19C81941EA661F90080C75C /* KidsMathTests */,
+				A19C819F1EA661F90080C75C /* KidsMathUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A19C817C1EA661F80080C75C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A19C818F1EA661F80080C75C /* LaunchScreen.storyboard in Resources */,
+				A19C818C1EA661F80080C75C /* Assets.xcassets in Resources */,
+				A19C81871EA661F80080C75C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A19C81931EA661F90080C75C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A19C819E1EA661F90080C75C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A19C817A1EA661F80080C75C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A19C81841EA661F80080C75C /* ViewController.swift in Sources */,
+				A19C81821EA661F80080C75C /* AppDelegate.swift in Sources */,
+				A19C818A1EA661F80080C75C /* KidsMath.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A19C81911EA661F90080C75C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A19C819A1EA661F90080C75C /* KidsMathTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A19C819C1EA661F90080C75C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A19C81A51EA661F90080C75C /* KidsMathUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A19C81971EA661F90080C75C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A19C817D1EA661F80080C75C /* KidsMath */;
+			targetProxy = A19C81961EA661F90080C75C /* PBXContainerItemProxy */;
+		};
+		A19C81A21EA661F90080C75C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A19C817D1EA661F80080C75C /* KidsMath */;
+			targetProxy = A19C81A11EA661F90080C75C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A19C81851EA661F80080C75C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A19C81861EA661F80080C75C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A19C818D1EA661F80080C75C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A19C818E1EA661F80080C75C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A19C81A71EA661F90080C75C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A19C81A81EA661F90080C75C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A19C81AA1EA661F90080C75C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KidsMath/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gsapkal.KidsMath;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A19C81AB1EA661F90080C75C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KidsMath/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gsapkal.KidsMath;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A19C81AD1EA661F90080C75C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KidsMathTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gsapkal.KidsMathTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KidsMath.app/KidsMath";
+			};
+			name = Debug;
+		};
+		A19C81AE1EA661F90080C75C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KidsMathTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gsapkal.KidsMathTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KidsMath.app/KidsMath";
+			};
+			name = Release;
+		};
+		A19C81B01EA661F90080C75C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KidsMathUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gsapkal.KidsMathUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KidsMath;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A19C81B11EA661F90080C75C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KidsMathUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gsapkal.KidsMathUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KidsMath;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A19C81791EA661F80080C75C /* Build configuration list for PBXProject "KidsMath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A19C81A71EA661F90080C75C /* Debug */,
+				A19C81A81EA661F90080C75C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A19C81A91EA661F90080C75C /* Build configuration list for PBXNativeTarget "KidsMath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A19C81AA1EA661F90080C75C /* Debug */,
+				A19C81AB1EA661F90080C75C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A19C81AC1EA661F90080C75C /* Build configuration list for PBXNativeTarget "KidsMathTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A19C81AD1EA661F90080C75C /* Debug */,
+				A19C81AE1EA661F90080C75C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A19C81AF1EA661F90080C75C /* Build configuration list for PBXNativeTarget "KidsMathUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A19C81B01EA661F90080C75C /* Debug */,
+				A19C81B11EA661F90080C75C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A19C81881EA661F80080C75C /* KidsMath.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A19C81891EA661F80080C75C /* KidsMath.xcdatamodel */,
+			);
+			currentVersion = A19C81891EA661F80080C75C /* KidsMath.xcdatamodel */;
+			path = KidsMath.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A19C81761EA661F80080C75C /* Project object */;
+}
