@@ -33,24 +33,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0l-vQ-cLO">
-                                <rect key="frame" x="200" y="164" width="200" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0l-vQ-cLO">
+                                <rect key="frame" x="200" y="148" width="200" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="IZC-cr-7tG"/>
-                                    <constraint firstAttribute="width" constant="200" id="SUa-Uh-5jb"/>
+                                    <constraint firstAttribute="height" constant="50" id="3Ha-er-xFM"/>
+                                    <constraint firstAttribute="width" constant="200" id="WXl-ui-HVZ"/>
                                 </constraints>
                                 <state key="normal" title="Addition"/>
                                 <connections>
                                     <segue destination="cb2-mT-AMk" kind="show" id="2R0-Ft-bR0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Odh-1X-Iyp">
-                                <rect key="frame" x="200" y="262" width="200" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Odh-1X-Iyp">
+                                <rect key="frame" x="200" y="245" width="200" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="RRL-JY-RAa"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="ddC-Eb-txt"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="kLA-XO-zwA"/>
-                                    <constraint firstAttribute="height" constant="50" id="un9-A3-F0W"/>
+                                    <constraint firstAttribute="height" constant="50" id="FRo-Ai-6J7"/>
+                                    <constraint firstAttribute="width" constant="200" id="pek-2P-5IT"/>
                                 </constraints>
                                 <state key="normal" title="Subtraction"/>
                                 <connections>
@@ -60,8 +58,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="r0l-vQ-cLO" firstAttribute="centerX" secondItem="R9N-ff-rSN" secondAttribute="centerX" id="IFI-QH-B91"/>
-                            <constraint firstItem="r0l-vQ-cLO" firstAttribute="top" secondItem="2H6-FY-dNq" secondAttribute="bottom" constant="100" id="SQp-SE-VXQ"/>
+                            <constraint firstItem="r0l-vQ-cLO" firstAttribute="top" secondItem="2H6-FY-dNq" secondAttribute="bottom" constant="100" id="BN2-7D-4ci"/>
+                            <constraint firstItem="Odh-1X-Iyp" firstAttribute="centerX" secondItem="R9N-ff-rSN" secondAttribute="centerX" id="QDG-0T-XDy"/>
+                            <constraint firstItem="Odh-1X-Iyp" firstAttribute="top" secondItem="r0l-vQ-cLO" secondAttribute="bottom" constant="50" id="WYw-m8-uAS"/>
+                            <constraint firstItem="r0l-vQ-cLO" firstAttribute="centerX" secondItem="R9N-ff-rSN" secondAttribute="centerX" id="dCn-1P-CJh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6xH-wp-tK9"/>
