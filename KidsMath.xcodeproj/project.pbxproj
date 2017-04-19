@@ -17,6 +17,8 @@
 		A19C81A51EA661F90080C75C /* KidsMathUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C81A41EA661F90080C75C /* KidsMathUITests.swift */; };
 		A19C81B31EA66AC10080C75C /* AdditionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C81B21EA66AC10080C75C /* AdditionController.swift */; };
 		A19C81B51EA671DA0080C75C /* SubstractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C81B41EA671DA0080C75C /* SubstractionController.swift */; };
+		A1AEAC2B1EA6E60E0053EDA2 /* MathTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AEAC2A1EA6E60E0053EDA2 /* MathTask.swift */; };
+		A1AEAC311EA6F08F0053EDA2 /* MathTaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AEAC301EA6F08F0053EDA2 /* MathTaskTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		A19C81A61EA661F90080C75C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A19C81B21EA66AC10080C75C /* AdditionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionController.swift; sourceTree = "<group>"; };
 		A19C81B41EA671DA0080C75C /* SubstractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubstractionController.swift; sourceTree = "<group>"; };
+		A1AEAC2A1EA6E60E0053EDA2 /* MathTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathTask.swift; sourceTree = "<group>"; };
+		A1AEAC301EA6F08F0053EDA2 /* MathTaskTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MathTaskTableViewController.swift; path = ../MathTaskTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +107,11 @@
 		A19C81801EA661F80080C75C /* KidsMath */ = {
 			isa = PBXGroup;
 			children = (
+				A1AEAC301EA6F08F0053EDA2 /* MathTaskTableViewController.swift */,
 				A19C81811EA661F80080C75C /* AppDelegate.swift */,
 				A19C81831EA661F80080C75C /* ViewController.swift */,
 				A19C81851EA661F80080C75C /* Main.storyboard */,
+				A1AEAC2A1EA6E60E0053EDA2 /* MathTask.swift */,
 				A19C818B1EA661F80080C75C /* Assets.xcassets */,
 				A19C818D1EA661F80080C75C /* LaunchScreen.storyboard */,
 				A19C81901EA661F80080C75C /* Info.plist */,
@@ -197,21 +203,24 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Panaromic Innovations Inc";
 				TargetAttributes = {
 					A19C817D1EA661F80080C75C = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = 3932BYJ3D2;
+						LastSwiftMigration = 0830;
 					};
 					A19C81941EA661F90080C75C = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = 3932BYJ3D2;
+						LastSwiftMigration = 0830;
 						TestTargetID = A19C817D1EA661F80080C75C;
 					};
 					A19C819F1EA661F90080C75C = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = 3932BYJ3D2;
+						LastSwiftMigration = 0830;
 						TestTargetID = A19C817D1EA661F80080C75C;
 					};
 				};
@@ -272,7 +281,9 @@
 				A19C81821EA661F80080C75C /* AppDelegate.swift in Sources */,
 				A19C818A1EA661F80080C75C /* KidsMath.xcdatamodeld in Sources */,
 				A19C81B51EA671DA0080C75C /* SubstractionController.swift in Sources */,
+				A1AEAC2B1EA6E60E0053EDA2 /* MathTask.swift in Sources */,
 				A19C81B31EA66AC10080C75C /* AdditionController.swift in Sources */,
+				A1AEAC311EA6F08F0053EDA2 /* MathTaskTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,8 +351,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -385,8 +398,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -405,6 +420,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -418,6 +434,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gsapkal.KidsMath;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -429,6 +446,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gsapkal.KidsMath;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -440,6 +458,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gsapkal.KidsMathTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KidsMath.app/KidsMath";
 			};
 			name = Debug;
@@ -452,6 +471,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gsapkal.KidsMathTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KidsMath.app/KidsMath";
 			};
 			name = Release;
@@ -463,6 +483,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gsapkal.KidsMathUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = KidsMath;
 				USES_XCTRUNNER = YES;
 			};
@@ -475,6 +496,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gsapkal.KidsMathUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = KidsMath;
 				USES_XCTRUNNER = YES;
 			};
@@ -499,6 +521,7 @@
 				A19C81AB1EA661F90080C75C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A19C81AC1EA661F90080C75C /* Build configuration list for PBXNativeTarget "KidsMathTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +530,7 @@
 				A19C81AE1EA661F90080C75C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A19C81AF1EA661F90080C75C /* Build configuration list for PBXNativeTarget "KidsMathUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +539,7 @@
 				A19C81B11EA661F90080C75C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
