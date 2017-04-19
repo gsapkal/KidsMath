@@ -38,12 +38,16 @@ class MathTaskTableViewController: UIViewController, UITableViewDelegate, UITabl
             if (pValue != "" ) {
                 let num1 = Int(mathTask.operand1.text!)
                 let num2 = Int(mathTask.operand2.text!)
-                let result = Int(mathTask.result.text!)
                 
-                if ( (operation == "+") && ( (num1! + num2!) == result!) ||
-                     (operation == "-") && ( (num1! - num2!) == result!) ||
-                     (operation == "/") && ( (num1!/num2!) == result!) ||
-                     (operation == "*") && ( (num1! - num2!) == result!)
+                guard let result = Int(mathTask.result.text!) else {
+                    mathTask.result.backgroundColor = UIColor.red
+                    continue
+                }
+                
+                if ( (operation == "+") && ( (num1! + num2!) == result) ||
+                     (operation == "-") && ( (num1! - num2!) == result) ||
+                     (operation == "/") && ( (num1!/num2!) == result) ||
+                     (operation == "x") && ( (num1! * num2!) == result)
                     ) {
                     mathTask.result.backgroundColor = UIColor.green
                 } else {
@@ -67,8 +71,9 @@ class MathTaskTableViewController: UIViewController, UITableViewDelegate, UITabl
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // return the number of rows
-        return 8
+                 // return the number of rows
+        return (Int(tableView.bounds.height / tableView.rowHeight) - 5 )
+
     }
 
     
@@ -77,6 +82,11 @@ class MathTaskTableViewController: UIViewController, UITableViewDelegate, UITabl
        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? MathTask else {
             fatalError("The dequeued cell is not an instance of mathTask.")
         }
+        
+        //Set the result text filed delegate.
+        cell.result.delegate = cell
+        cell.result.keyboardType = .numberPad
+        cell.result.becomeFirstResponder()
         
         if (operation == "/" || operation == "*") {
             var number1 = getNonZeroRandomNumber(max: 10)

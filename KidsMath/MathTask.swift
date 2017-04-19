@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MathTask: UITableViewCell {
+class MathTask: UITableViewCell, UITextFieldDelegate {
     
     //MARK: Properties
     
@@ -21,7 +21,7 @@ class MathTask: UITableViewCell {
     @IBOutlet var equals: UILabel!
     
     @IBOutlet var result: UITextField!
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -31,6 +31,18 @@ class MathTask: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    //Textfield delegates
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+  
+        let  char = string.cString(using: String.Encoding.utf8)!
+        let isBackSpace = strcmp(char, "\\b")
+        if (isBackSpace == -92) {
+            return true
+        }
+      
+       return Int(string) != nil
     }
 
 }
