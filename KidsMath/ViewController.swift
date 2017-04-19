@@ -34,7 +34,7 @@ class ViewController: UIViewController {
             destinationVC.instruction = "Subtract the numbers in table - "
             
         } else if (operation.currentTitle == "Division") {
-            destinationVC.operation = "%"
+            destinationVC.operation = "/"
             destinationVC.instruction = "Divide the numbers in table - "
             
         } else if (operation.currentTitle == "Multiplication") {

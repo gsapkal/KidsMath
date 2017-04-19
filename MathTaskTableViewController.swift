@@ -22,7 +22,6 @@ class MathTaskTableViewController: UIViewController, UITableViewDelegate, UITabl
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        loadMathTasks()
     }
 
     override func didReceiveMemoryWarning() {
@@ -66,60 +65,48 @@ class MathTaskTableViewController: UIViewController, UITableViewDelegate, UITabl
        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? MathTask else {
             fatalError("The dequeued cell is not an instance of mathTask.")
         }
-        cell.operand1.text = String(Int(arc4random_uniform(100)))
+        
+        if (operation == "/" || operation == "*") {
+            var number1 = getNonZeroRandomNumber(max: 10)
+            let number2 = getNonZeroRandomNumber(max: 10)
+            if(operation == "/") {
+                number1 = number2*number1
+            }
+            cell.operand1.text = String(number1)
+            cell.operand2.text = String(number2)
+        } else {
+            var number1 = getNonZeroRandomNumber(max: 100)
+            var number2 = getNonZeroRandomNumber(max: 100)
+            if (operation == "-") {
+                //Swap the numbers
+                if number1 < number2 {
+                    number1 = number1 + number2
+                    number2 = number1 - number2
+                    number1 = number1 - number2
+                }
+            }
+            cell.operand1.text = String(number1)
+            cell.operand2.text = String(number2)
+        }
+       
+        
+       
         cell.operation.text = operation
-        cell.operand2.text = String(Int(arc4random_uniform(100)))
+        
         cell.equals.text = "="
         return cell
     }
     
-   /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
-    private func loadMathTasks(){
+    func getNonZeroRandomNumber(max : UInt32) -> Int {
         
+        while (true) {
+            let retVal = Int(arc4random_uniform(max))
+            
+            if (retVal > 0) {
+                return retVal
+            }
+        }
     }
+   
 
 }
