@@ -72,7 +72,7 @@ class MathTaskTableViewController: UIViewController, UITableViewDelegate, UITabl
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
                  // return the number of rows
-        return (Int(tableView.bounds.height / tableView.rowHeight) - 5 )
+        return (Int(tableView.bounds.height / tableView.rowHeight) - 2)
 
     }
 

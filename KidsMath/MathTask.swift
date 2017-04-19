@@ -44,5 +44,14 @@ class MathTask: UITableViewCell, UITextFieldDelegate {
       
        return Int(string) != nil
     }
+   
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first {
+            if result.isFirstResponder && touch.view != result {
+                result.resignFirstResponder()
+            }
+        }
+        super.touchesBegan(touches, with: event)
+    }
 
 }
