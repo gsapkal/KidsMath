@@ -192,17 +192,31 @@
                                     <outlet property="delegate" destination="cb2-mT-AMk" id="RMm-r3-V03"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3c-VP-Kql">
+                                <rect key="frame" x="107" y="596" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Z6U-oT-6Ua"/>
+                                    <constraint firstAttribute="width" constant="200" id="ldJ-UX-aJz"/>
+                                </constraints>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitAnswers:" destination="cb2-mT-AMk" eventType="touchUpInside" id="IRQ-mw-u48"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="4C7-r9-R8H" firstAttribute="top" secondItem="Xy4-fR-XwB" secondAttribute="bottom" constant="5" id="4rs-N1-acv"/>
+                            <constraint firstItem="S3c-VP-Kql" firstAttribute="centerX" secondItem="ojt-qg-AXV" secondAttribute="centerX" id="9Cx-e0-0Vl"/>
                             <constraint firstItem="4C7-r9-R8H" firstAttribute="leading" secondItem="ojt-qg-AXV" secondAttribute="leadingMargin" constant="10" id="O2w-qL-nWX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4C7-r9-R8H" secondAttribute="trailing" constant="10" id="OUf-Fm-H0X"/>
                             <constraint firstAttribute="bottomMargin" secondItem="4C7-r9-R8H" secondAttribute="bottom" constant="150" id="TyY-BR-fj7"/>
                             <constraint firstItem="4C7-r9-R8H" firstAttribute="centerX" secondItem="ojt-qg-AXV" secondAttribute="centerX" id="VnW-VH-O7w"/>
+                            <constraint firstItem="S3c-VP-Kql" firstAttribute="top" secondItem="4C7-r9-R8H" secondAttribute="bottom" constant="10" id="yv8-Lt-bHz"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="submitBtn" destination="S3c-VP-Kql" id="G2p-bH-gQn"/>
                         <outlet property="tableView" destination="4C7-r9-R8H" id="vgz-5p-GJM"/>
                     </connections>
                 </viewController>

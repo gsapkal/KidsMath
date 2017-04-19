@@ -10,8 +10,10 @@ import UIKit
 
 class MathTaskTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet var submitAction: UIButton!
     
     @IBOutlet var tableView: UITableView!
+    @IBOutlet var submitBtn: UIButton!
     
     var operation : String?
     var instruction : String?
@@ -27,6 +29,21 @@ class MathTaskTableViewController: UIViewController, UITableViewDelegate, UITabl
         super.didReceiveMemoryWarning()
     }
 
+    @IBAction func submitAnswers(_ sender: Any) {
+        let cells = self.tableView.visibleCells
+  
+        for cell in cells {
+            let mathTask = cell as! MathTask
+            let pValue = mathTask.result.text!
+            
+            if pValue != "" {
+                mathTask.result.backgroundColor = UIColor.green
+            } else {
+                mathTask.result.backgroundColor = UIColor.orange
+            }
+        }
+
+    }
     
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
