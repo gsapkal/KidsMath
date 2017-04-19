@@ -35,7 +35,7 @@ class MathTaskTableViewController: UIViewController, UITableViewDelegate, UITabl
             let mathTask = cell as! MathTask
             let pValue = mathTask.result.text!
             
-            if pValue != "" {
+            if (pValue != "" ) {
                 let num1 = Int(mathTask.operand1.text!)
                 let num2 = Int(mathTask.operand2.text!)
                 let result = Int(mathTask.result.text!)
@@ -43,12 +43,14 @@ class MathTaskTableViewController: UIViewController, UITableViewDelegate, UITabl
                 if ( (operation == "+") && ( (num1! + num2!) == result!) ||
                      (operation == "-") && ( (num1! - num2!) == result!) ||
                      (operation == "/") && ( (num1!/num2!) == result!) ||
-                     (operation == "*") && ( (num1!*num2!) == result!)
+                     (operation == "*") && ( (num1! - num2!) == result!)
                     ) {
                     mathTask.result.backgroundColor = UIColor.green
                 } else {
                     mathTask.result.backgroundColor = UIColor.red
                 }
+            } else {
+                mathTask.result.backgroundColor = UIColor.red
             }
         }
 
