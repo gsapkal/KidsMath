@@ -20,6 +20,29 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let operation = sender as! UIButton
+        let destinationVC = segue.destination as! MathTaskTableViewController
+        
+        if (operation.currentTitle == "Addition") {
+            destinationVC.operation = "+"
+            destinationVC.instruction = "Add the numbers in table - "
+            
+        } else if (operation.currentTitle == "Subtraction") {
+            destinationVC.operation = "-"
+            destinationVC.instruction = "Subtract the numbers in table - "
+            
+        } else if (operation.currentTitle == "Division") {
+            destinationVC.operation = "%"
+            destinationVC.instruction = "Divide the numbers in table - "
+            
+        } else if (operation.currentTitle == "Multiplication") {
+            destinationVC.operation = "*"
+            destinationVC.instruction = "Multiply the numbers in table - "
+            
+        }
+    }
+   
 }
 

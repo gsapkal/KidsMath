@@ -13,11 +13,13 @@ class MathTaskTableViewController: UIViewController, UITableViewDelegate, UITabl
     
     @IBOutlet var tableView: UITableView!
     
+    var operation : String?
+    var instruction : String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        //tableView.reloadData()
         loadMathTasks()
     }
 
@@ -25,6 +27,12 @@ class MathTaskTableViewController: UIViewController, UITableViewDelegate, UITabl
         super.didReceiveMemoryWarning()
     }
 
+    
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return instruction
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         //Number of sections in table
         return 1
@@ -32,7 +40,7 @@ class MathTaskTableViewController: UIViewController, UITableViewDelegate, UITabl
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // return the number of rows
-        return 5
+        return 8
     }
 
     
@@ -42,7 +50,7 @@ class MathTaskTableViewController: UIViewController, UITableViewDelegate, UITabl
             fatalError("The dequeued cell is not an instance of mathTask.")
         }
         cell.operand1.text = String(Int(arc4random_uniform(100)))
-        cell.operation.text = "+"
+        cell.operation.text = operation
         cell.operand2.text = String(Int(arc4random_uniform(100)))
         cell.equals.text = "="
         return cell
